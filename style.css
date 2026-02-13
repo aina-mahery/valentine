@@ -17,12 +17,11 @@ h1 {
     margin-bottom: 50px;
 }
 
-/* Conteneur pour aligner les boutons au départ */
 .button-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Espace entre les deux boutons */
+    gap: 30px;
     width: 100%;
 }
 
@@ -33,7 +32,7 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 50px;
-    z-index: 10; /* Pour passer devant le texte si besoin */
+    z-index: 10;
 }
 
 #btn-oui {
@@ -45,7 +44,7 @@ button {
 #btn-non {
     background-color: #6c757d;
     color: white;
-    /* On ne met pas de position absolue ici pour qu'il reste dans le flux flex au début */
+    transition: left 0.25s ease, top 0.25s ease;
 }
 
 .hidden {
